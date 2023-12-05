@@ -1,0 +1,248 @@
+/* Sección de Canales */
+.theme-project {
+    padding: 60px 0;
+    color: #ffffff;
+    background-color: #3fa6debe; /* Color celeste de fondo */
+    text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.theme-section-module {
+    margin-bottom: 40px;
+}
+
+.theme-project-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffffff; /* Cambiado a color blanco para mayor contraste */
+    background-color: #2e5e7b; /* Fondo celeste para el título */
+    padding: 10px; /* Espaciado alrededor del texto del título */
+    border-radius: 4px; /* Bordes redondeados para el título */
+}
+
+.theme-project-content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    display: inline-block; /* Mostrar en línea para centrar */
+    margin: 0 10px; /* Añadir margen lateral para separar los elementos */
+}
+
+.theme-project-content:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-thumbnail {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-thumbnail img {
+    width: 90px;
+    height: 75px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.theme-project-content:hover .portfolio-thumbnail img {
+    transform: scale(1.1);
+}
+
+.content-area {
+    padding: 20px;
+}
+
+
+/* Otros estilos */
+.theme-section-subtitle,
+.theme-section-title {
+    margin-bottom: 15px;
+}
+
+.theme-separator-line-horrizontal-full {
+    height: 2px;
+    width: 100%;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .theme-project-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Carrusel de fotos */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: none;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: rgba(58, 97, 152, 0.7);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 50px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 0; /* Elimina el margen derecho fijo */
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Ajustes para hacer que el navbar sea responsivo */
+  @media screen and (max-width: 768px) {
+    .logo img {
+      margin-left: 10px; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+    }
+  
+    .nav-list {
+      margin-right: 0;
+      flex-grow: 1; /* Ocupa todo el espacio disponible en pantallas más pequeñas */
+      justify-content: flex-end; /* Mueve la lista al final en pantallas más pequeñas */
+    }
+  
+    .nav-list li {
+      margin-right: 10px;
+    }
+  }
+  
+  .nav-list a:hover::before {
+    content: ''; /* Pseudo-elemento para el cuadrado */
+    position: absolute;
+    top: -32px;
+    right: -5px;
+    bottom: -32px;
+    left: -5px;
+    background-color: rgba(0, 0, 0, 0.2); /* Color oscuro con transparencia */
+  }
+  
+  /* Contenido de la página */
+  
+  /* Footer styles */
+  footer {
+    background-color: rgba(58, 97, 152, 0.7); /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .social-icons img {
+    max-width: 30px;
+  }
+  
+  /* Agregamos una división entre el contenido principal y el footer */
+  .container {
+    margin-bottom: 60px;
+  }
+  
+  /* Información adicional */
+  .additional-info {
+    background-color: #fff; /* Fondo blanco para resaltar la información adicional */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados para suavizar la apariencia */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Sombra suave para destacar el contenedor */
+  }
+  
+  .additional-info h2 {
+    color: #ffffff; /* Color del texto del título */
+    background-color: rgba(58, 97, 152, 0.7); /* Fondo celeste para el título */
+    padding: 10px; /* Espacio alrededor del texto del título */
+    margin-bottom: 15px; /* Espacio entre el título y el contenido */
+    border-radius: 4px; /* Bordes redondeados para el título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+  }
+  
+  .additional-info p {
+    margin-bottom: 15px;
+    font-size: 16px; /* Tamaño de fuente ligeramente más grande */
+    line-height: 1.6; /* Altura de línea ligeramente mayor para una mejor legibilidad */
+  }
+  
+  .additional-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .additional-info li {
+    margin-bottom: 10px;
+  }
+  
+  .additional-info li span {
+    color: rgba(239, 239, 239, 0.7); /* Color celeste para resaltar las sucursales */
+    font-weight: bold; /* Texto en negrita para resaltar */
+  }
+  
+  /* Ajustes para hacer que la información adicional sea responsiva */
+  @media screen and (max-width: 768px) {
+    .additional-info {
+      padding: 10px;
+    }
+  }
+  
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  }
+  
+  .whatsapp-button a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #25d36514; /* Color de fondo de WhatsApp */
+    border-radius: 50%; /* Hace el botón redondo */
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .whatsapp-button img {
+    width: 100px; /* Tamaño del icono de WhatsApp */
+    height: auto;
+  }
+  
